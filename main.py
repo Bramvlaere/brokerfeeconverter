@@ -16,7 +16,7 @@ app = Flask(__name__,template_folder=TEMPLATE_PATH)
 def first():
     return render_template('index.html', title='Home')
 
-@app.route('/get_data', methods =["GET", "POST"])
+@app.route('/get_data')
 def get_data():
     new_calc=''
     print('in get_data')
