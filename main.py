@@ -37,6 +37,7 @@ class BrokerFeeCalculator:
     def calculate_monthly_with_broker_feepercentage(self):
         return self.price + self.broker_fee * self.price / 100
     
+
     
 if __name__ == '__main__':
     app.run()
